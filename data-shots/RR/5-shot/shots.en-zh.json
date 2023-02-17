@@ -1,0 +1,22 @@
+[
+    {
+        "source": "All of the polygons to be rendered are first sorted by the top y coordinate at which they first appear, then each row or scanline of the image is computed using the intersection of a scanline with the polygons on the front of the sorted list, while the sorted list is updated to discard no-longer-visible polygons as the active scan line is advanced down the picture.",
+        "target": "\u6240\u6709\u5f85\u6e32\u67d3\u7684\u591a\u8fb9\u5f62\u9996\u5148\u6309\u7167\u9876\u70b9 y \u5750\u6807\u51fa\u73b0\u7684\u987a\u5e8f\u6392\u5e8f,\u7136\u540e\u4f7f\u7528\u626b\u63cf\u7ebf\u4e0e\u5217\u8868\u4e2d\u524d\u9762\u591a\u8fb9\u5f62\u7684\u4ea4\u70b9\u8ba1\u7b97\u56fe\u50cf\u7684\u6bcf\u884c\u6216\u8005\u6bcf\u6761\u626b\u63cf\u7ebf,\u5728\u6d3b\u52a8\u626b\u63cf\u7ebf\u9010\u6b65\u6cbf\u56fe\u50cf\u5411\u4e0b\u8ba1\u7b97\u7684\u65f6\u5019\u66f4\u65b0\u5217\u8868\u4e22\u5f03\u4e0d\u53ef\u89c1\u7684\u591a\u8fb9\u5f62\u3002"
+    },
+    {
+        "source": "Please note that these third parties, listed below with the respective hypertext links to the privacy policies, act as independent data controllers of data collected through the cookies they send. Therefore, the user must refer to their policies regarding the processing of personal data, disclosures and any methods of obtaining consent (selection and de-selection of the respective cookies).",
+        "target": "\u9700\u6ce8\u610f,\u4e0b\u5217\u7b2c\u4e09\u65b9\u4e0e\u9690\u79c1\u653f\u7b56\u7684\u76f8\u5bf9\u8d85\u6587\u672c\u94fe\u63a5,\u662f\u5145\u5f53\u901a\u8fc7\u5b83\u4eec\u53d1\u9001\u7684 cookie \u6536\u96c6\u7684\u81ea\u4e3b\u6570\u636e\u63a7\u5236\u5668,\u56e0\u6b64,\u7528\u6237\u5fc5\u987b\u53c2\u8003\u5b83\u4eec\u5904\u7406\u6536\u96c6\u4e2a\u4eba\u8d44\u6599\u3001\u4fe1\u606f\u53ca\u4efb\u4f55\u5f62\u5f0f\u7684\u6388\u6743\u653f\u7b56(\u9009\u62e9\u548c\u53d6\u6d88\u76f8\u5173\u7684 cookie \u3002"
+    },
+    {
+        "source": "Woven fabric lends not only characteristic structure to the bag, but also extraordinary durability, strength and tear-growth resistance.",
+        "target": "\u888b\u5b50\u7684\u7f16\u7ec7\u7269\u6750\u6599\u4e0d\u4ec5\u4f7f\u888b\u5b50\u5177\u6709\u4e86\u76f8\u5e94\u7684\u7279\u6027\u7ed3\u6784,\u8fd8\u4f7f\u5176\u5177\u5907\u4e86\u8d85\u4e4e\u5bfb\u5e38\u7684\u7ed3\u5b9e\u5ea6\u3001\u5f3a\u5ea6\u548c\u6297\u6495\u62c9\u6027\u3002"
+    },
+    {
+        "source": "Update on WFP &apos; s Role in the Humanitarian Assistance System",
+        "target": "\u5173\u4e8e\u7cae\u98df\u7f72\u5728\u4eba\u9053\u4e3b\u4e49\u63f4\u52a9\u7cfb\u7edf\u4e2d\u4f5c\u7528\u7684\u6700\u65b0\u60c5\u51b5"
+    },
+    {
+        "source": "IX. Position of Azerbaijan towards the conflict settlement",
+        "target": "\u4e5d. \u963f\u585e\u62dc\u7586\u5bf9\u89e3\u51b3\u51b2\u7a81\u7684\u7acb\u573a"
+    }
+]

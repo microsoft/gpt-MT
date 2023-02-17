@@ -1,0 +1,6 @@
+[
+    {
+        "source": "All of the polygons to be rendered are first sorted by the top y coordinate at which they first appear, then each row or scanline of the image is computed using the intersection of a scanline with the polygons on the front of the sorted list, while the sorted list is updated to discard no-longer-visible polygons as the active scan line is advanced down the picture.",
+        "target": "\u6240\u6709\u5f85\u6e32\u67d3\u7684\u591a\u8fb9\u5f62\u9996\u5148\u6309\u7167\u9876\u70b9 y \u5750\u6807\u51fa\u73b0\u7684\u987a\u5e8f\u6392\u5e8f,\u7136\u540e\u4f7f\u7528\u626b\u63cf\u7ebf\u4e0e\u5217\u8868\u4e2d\u524d\u9762\u591a\u8fb9\u5f62\u7684\u4ea4\u70b9\u8ba1\u7b97\u56fe\u50cf\u7684\u6bcf\u884c\u6216\u8005\u6bcf\u6761\u626b\u63cf\u7ebf,\u5728\u6d3b\u52a8\u626b\u63cf\u7ebf\u9010\u6b65\u6cbf\u56fe\u50cf\u5411\u4e0b\u8ba1\u7b97\u7684\u65f6\u5019\u66f4\u65b0\u5217\u8868\u4e22\u5f03\u4e0d\u53ef\u89c1\u7684\u591a\u8fb9\u5f62\u3002"
+    }
+]
