@@ -1,0 +1,5 @@
+   langs  wmt22-comet-da  wmt22-cometkiwi-da  chrf  bleu
+0  de-en          0.8413              0.8092  56.5  32.6
+1  en-de          0.8402              0.8234  59.8  35.8
+2  zh-en          0.8305              0.7822  69.4  46.8
+3  en-zh          0.8422              0.8065  36.4  40.2
