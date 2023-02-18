@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="500" height="130" src="assets/MT-GPT.png">
+  <img width="600" height="150" src="assets/MT-GPT.png">
 </p>
 <hr />
 
