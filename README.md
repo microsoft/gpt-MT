@@ -62,7 +62,7 @@ For example:
 $ cd ./tools
 $ python evaluate.py \
     --testset ../evaluation/testset/wmt-testset \
-    --directions de-en en-de cs-en en-cs ja-en en-ja zh-en en-zh ru-en en-ru uk-en en-uk is-en en-is ha-en en-ha fr-de de-fr\
+    --directions de-en en-de cs-en en-cs ja-en en-ja zh-en en-zh ru-en en-ru uk-en en-uk is-en en-is ha-en en-ha fr-de de-fr \
     --metrics comet chrf bleu \
     --comet-models wmt22-comet-da wmt22-cometkiwi-da \
     --hypotheses ../evaluation/system-outputs/text-davinci-003/QR/5-shot
