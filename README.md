@@ -1,14 +1,83 @@
-# Project
+<p align="center">
+  <img width="500" height="130" src="assets/MT-GPT.png">
+</p>
+<hr />
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+## Introduction
+In this work, we present a comprehensive evaluation of GPT models for machine translation, covering various aspects such as quality of different GPT models in comparison with state-of-the-art research and commercial systems, effect of prompting strategies, robustness towards domain shifts and document-level translation. We experiment with 18 different translation directions involving high and low resource languages, as well as non English-centric translations, and evaluate the performance of three GPT models: ChatGPT, GPT3.5 (text-davinci-003), and text-davinci-002. We also show that hybrid approaches, which combine GPT models with other translation systems, can further enhance the translation quality.
 
-As the maintainer of this project, please make a few updates:
+## Quick Installation
+```bash
+$ git clone https://github.com/microsoft/gpt-MT.git
+$ cd tools
+$ conda create -n gpt-mt-eval python=3.10
+$ conda activate gpt-mt-eval
+$ pip install --upgrade pip
+$ pip install -r requirements.txt
+$ git clone https://github.com/Unbabel/COMET.git
+$ cd COMET
+$ git checkout fc2f2b3 
+$ poetry install
+```
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+## Data Shots and System Outputs
+We have released all selected shots in our experiments including the sentence-level shots (RR, QR and QS) and the document-level shots (DR and DF). These shots have been organized under [data-shots](./data-shots/).
+
+Moreover, To make reproducing all results an easy task, all system outputs have been released under [system-output](./evaluation/system-outputs/) in addition the WMT official test sets along with document-separated and domain-separated files.
+
+## Reproducing Results
+To reproduce the reported results in the paper, you need to run the evaluation script [evaluate.py](./tools/evaluate.py).
+### CLI Usage:
+```bash
+$ python evaluate.py -h
+usage: evaluate.py [-h] --testset TESTSET [--docids DOCIDS] --hypotheses HYPOTHESES [HYPOTHESES ...] --directions DIRECTIONS [DIRECTIONS ...]
+                   [--comet-models COMET_MODELS [COMET_MODELS ...]] [--gpus GPUS] --metrics METRICS [METRICS ...] [--save-name SAVE_NAME]
+                   [--sliding-window SLIDING_WINDOW] [--context-length CONTEXT_LENGTH]
+
+options:
+  -h, --help            show this help message and exit
+  --testset TESTSET     A path to the test set directory containing references and sources for each language pair. Must contain
+                        {src_lang}{tgt_lang}/test.{src_lang}-{tgt_lang}.{tgt_lang} and {src_lang}{tgt_lang}/test.{src_lang}-{tgt_lang}.{src_lang}
+  --docids DOCIDS       A path to the directory containing doc-ids corresponding to testset for each language pair. Must contain
+                        {src_lang}{tgt_lang}/test.{src_lang}-{tgt_lang}.docids
+  --hypotheses HYPOTHESES [HYPOTHESES ...]
+                        A path to the model output files. must contain {src_lang}{tgt_lang}/test.{src_lang}-{tgt_lang}.{tgt_lang}
+  --directions DIRECTIONS [DIRECTIONS ...]
+                        Language directions to evaluate on e.g. "en-de de-en"
+  --comet-models COMET_MODELS [COMET_MODELS ...]
+                        A list of COMET models to use for evaluation
+  --gpus GPUS           Number of GPUs to use with COMET
+  --metrics METRICS [METRICS ...]
+                        A list of metrics to use for evaluation, options ["bleu", "comet", "doc-comet", "chrf", "doc-bleu", "doc-chrf"]
+  --save-name SAVE_NAME
+                        name of the output files/folders
+  --sliding-window SLIDING_WINDOW
+                        The stride step over document
+  --context-length CONTEXT_LENGTH
+                        The number of sentences in a single context
+```
+For example:
+- To reproduce `GPT 5-Shot QR` results in `Table3`:
+```bash
+$ cd ./tools
+$ python evaluate.py \
+    --testset ../evaluation/testset/wmt-testset \
+    --directions de-en en-de cs-en en-cs ja-en en-ja zh-en en-zh ru-en en-ru uk-en en-uk is-en en-is ha-en en-ha fr-de de-fr\
+    --metrics comet chrf bleu \
+    --comet-models wmt22-comet-da wmt22-cometkiwi-da \
+    --hypotheses ../evaluation/system-outputs/text-davinci-003/QR/5-shot
+``` 
+- To reproduce `GPT Doc ZS w=16` results in `Table5`: 
+```bash
+$ cd ./tools
+$ python evaluate.py \
+    --testset ../evaluation/testset/wmt-testset \
+    --docids ../evaluation/testset/wmt-testset-docids \
+    --directions de-en en-de \
+    --metrics comet doc-comet chrf bleu doc-bleu \
+    --comet-models wmt22-comet-da wmt22-cometkiwi-da \
+    --hypotheses ../evaluation/system-outputs/text-davinci-003-doc-level/Doc-W16/zeroshot
+``` 
 
 ## Contributing
 
