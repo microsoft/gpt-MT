@@ -4,7 +4,7 @@
 <hr />
 
 ## Introduction
-In this work, we present a comprehensive evaluation of GPT models for machine translation, covering various aspects such as quality of different GPT models in comparison with state-of-the-art research and commercial systems, effect of prompting strategies, robustness towards domain shifts and document-level translation. We experiment with 18 different translation directions involving high and low resource languages, as well as non English-centric translations, and evaluate the performance of three GPT models: ChatGPT, GPT3.5 (text-davinci-003), and text-davinci-002. We also show that hybrid approaches, which combine GPT models with other translation systems, can further enhance the translation quality.
+In this work, we present a comprehensive evaluation of GPT models for machine translation, covering various aspects such as quality of different GPT models in comparison with state-of-the-art research and commercial systems, effect of prompting strategies, robustness towards domain shifts and document-level translation, all accompanied with an extensive analysis of the differential aspects of translations produced by GPT. We experiment with 18 different translation directions involving high and low resource languages, as well as non English-centric translations, and evaluate the performance of three GPT models: ChatGPT, GPT3.5 (text-davinci-003), and text-davinci-002. We also show that hybrid approaches, which combine GPT models with other translation systems, can further enhance the translation quality.
 
 ## Quick Installation
 ```bash
