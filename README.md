@@ -2,6 +2,7 @@
   <img width="600" height="150" src="assets/MT-GPT.png">
 </p>
 <hr />
+
 ## How Good Are GPT Models at Machine Translation? 
 ## A Comprehensive Evaluation
 
