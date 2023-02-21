@@ -110,10 +110,12 @@ Any use of third-party trademarks or logos are subject to those third-party's po
 
 If this work is helpful for your research, please consider citing the following BibTeX entry.
 
+```
 @article{gpt-mt-2023,
       title={How Good Are GPT Models at Machine Translation? A Comprehensive Evaluation}, 
       author={Amr Hendy and Mohamed Abdelrehim and Amr Sharaf and Vikas Raunak and Mohamed Gabr and Hitokazu Matsushita and Young Jin Kim and Mohamed Afify and Hany Hassan Awadalla},
       journal={arXiv preprint arXiv:2302.09210},
       year={2023}
-      
 }
+```    
+
