@@ -30,6 +30,55 @@ We have released all selected shots in our experiments including the sentence-le
 
 Moreover, To make reproducing all results an easy task, all system outputs have been released under [system-output](./evaluation/system-outputs/) in addition the WMT official test sets along with document-separated and domain-separated files.
 
+## Prompt Template Examples
+- zero-shot
+>Translate this into 1. [target language]:
+>
+>[input]
+>
+>1.
+
+- 1-shot
+>Translate this into 1. [target language]:
+> 
+>[shot 1 source input]
+> 
+>1. [shot 1 reference]
+> 
+>Translate this into 1. [target language]:
+>
+>[input]
+>
+>1.
+
+- 5-shot
+>Translate this into 1. [target language]:
+> 
+>[shot 1 source input]
+> 
+>1. [shot 1 reference]
+> 
+>Translate this into 1. [target language]:
+> 
+>[shot 2 source input]
+> 
+>1. [shot 2 reference]
+> 
+>....
+> 
+>Translate this into 1. [target language]:
+> 
+>[shot 5 source input]
+> 
+>1. [shot 5 reference]
+> 
+>Translate this into 1. [target language]:
+>
+>[input]
+>
+>1.
+
+
 ## Reproducing Results
 To reproduce the reported results in the paper, you need to run the evaluation script [evaluate.py](./tools/evaluate.py).
 ### CLI Usage:
